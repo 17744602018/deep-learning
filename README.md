@@ -6,7 +6,7 @@
 
 - 多层前馈神经网络(multi-layer feedforward neural networks):基本结构如图3所示，此种结构的圣经网络，每层神经元与下一层神经元全连接，神经元之间不存在同层连接，也不存在跨层连接。其网络层次包含3层，其中输入层神经元用于接收外界输入，隐层与输出层神经元对信号进行加工，最终结果由输出层神经元输出。
 
-<img src="./c-bpnn/4.png" style="zoom:50%;" />
+<img src="http://download.leixiaolei.com/4.png" style="zoom:50%;" />
 
 <div style="text-align:center;">图1.1 多层前馈神经网络</div>
 
@@ -14,7 +14,7 @@
 
 ​		BP神经网络是目前为止最为成功的神经网络算法之一，其学习方式采用标准梯度下降的误差逆传播（error BackPropagation）的方式，下面介绍的基本BP神经网络为3层前馈神经网络。
 
-<img src="./c-bpnn/2.png" style="zoom:50%;" />
+<img src="http://download.leixiaolei.com/2.png" style="zoom:50%;" />
 
 <div style="text-align:center;">图1.2.1 三层BP神经网络模型</div>
 
@@ -29,7 +29,7 @@
 
 1. 激活函数为f(x)=sigmoid(x)
 
-<img src="./c-bpnn/3.png" style="zoom:50%;" />
+<img src="http://download.leixiaolei.com/3.png" style="zoom:50%;" />
 
 <div style="text-align:center;">图1.2.2 sigmoid函数</div>
 
@@ -50,21 +50,21 @@
 
 ​		神经网络的*初始参数为[0,1]内随机数*，假设某次训练过程中神经网络的输入的某个训练数据为(x,y),经过神经网络的输出为yj=f(βj−θj)
 
-对于训练数据集中的单个数据其误差 6. <img src="./c-bpnn/5.png" style="zoom:50%;" />
+对于训练数据集中的单个数据其误差 6. <img src="http://download.leixiaolei.com/5.png" style="zoom:50%;" />
 
 采用梯度下降法根据误差对神经网络中的参数进行反馈学习，神经网络中参数更新的公式为**p←p+Δp**
 
 以误差的负梯度方向对参数进行更新，η为学习率，有如下公式：
 
-<img src="./c-bpnn/6.png" style="zoom:50%;float:left;" />
+<img src="http://download.leixiaolei.com/6.png" style="zoom:50%;float:left;" />
 
 按照以上推导方法有
 
-<img src="./c-bpnn/7.png" style="zoom:50%;float:left;" />
+<img src="http://download.leixiaolei.com/7.png" style="zoom:50%;float:left;" />
 
 **注意：**在公式13.14.15.16中η控制着每一轮迭代中的更新步长，若太大，则容易振荡，太小则学习过程收敛很慢，为了细微调节，13.14中的学习率可以和15.16中的不一样。
 
-<img src="./c-bpnn/8.png" style="zoom:50%;float:left;" />
+<img src="http://download.leixiaolei.com/8.png" style="zoom:50%;float:left;" />
 
 ### 1.3 **BP神经网络的训练过程**
 
@@ -244,7 +244,7 @@ void bpnn_init(void) {
 
 
 
-<img src="./c-bpnn/9.png" style="zoom:50%;" />
+
 
 <div style="text-align:center;">图2.3.1 BP训练过程</div>
 
